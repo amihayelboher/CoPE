@@ -14,10 +14,10 @@ The simplest way to run the project is as follows:
 2. Unless you changed anything, the 20-processes instances that were used for the experiments are currently there. Otherwise, put there your CoPE instances.
 3. Open a command line in the tests_part2 folder.
 4. If you changed anything or put another instances, run the command "python add_tts_and_dls_to_input.py" to sample a 100(-or some another number) deadlines and termination times.
-5. Run the command "python ipae_tests_part_2.py".
+5. Run the command "python ipae_tests_part_2.py" (after commenting out the unwilled algorithms, and specifically the MDP for more that 2 processes).
 
 Some words about the files and directories, just to get a notion:
-- tests_part2: Testing file. Make sure to comment out the MDP line in the list of algorithms if running instances with more than 2 processes.
+- tests_part2: Testing file.
 - ipae_heuristics: Contains the algorithms and some more functions.
 - add_tts_and_dls_to_input: Sampling deadlines and termination time for CoPE instances in the helper_folder2 folder, and create CoPE instances. The new instances appear in the helper_folder folder.
 - results_x: The results for the x-processes instances appear in this directory.
